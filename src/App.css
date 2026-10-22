@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #172033; }
+.app { max-width: 720px; margin: 40px auto; padding: 24px; background: white; border-radius: 12px; }
+h1 { color: #155e75; margin-bottom: 5px; }
+form, .task, .buttons { display: flex; gap: 8px; align-items: center; }
+form { margin: 24px 0; }
+input, select, button { padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; }
+input { flex: 1; min-width: 0; }
+button { background: #155e75; color: white; border: 0; cursor: pointer; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.task { justify-content: space-between; border-top: 1px solid #e2e8f0; padding: 12px 0; }
+.error { color: #b91c1c; } .success { color: #15803d; }
+@media (max-width: 600px) { .app { margin: 12px; } form, .task { flex-direction: column; align-items: stretch; } .buttons { flex-wrap: wrap; } }
+ 
